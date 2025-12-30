@@ -4,7 +4,7 @@ import { useTextGenerator } from '@/composables/useTextGenerator'
 
 const { load, generate, ready, loading, generating, result, error } = useTextGenerator()
 
-const userMessage = ref('Yo, tell me a joke about cats.')
+const userMessage = ref('Tell me a joke about cats.')
 
 const sendMessage = async () => {
   if (!userMessage.value) {
